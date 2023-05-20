@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="/static/css/style.css">
+    <script src="login.js"></script>
+
+    <link rel="stylesheet" href="/static/css/animate.css">
+	<!-- Icomoon Icon Fonts-->
+	<link rel="stylesheet" href="/static/css/icomoon.css">
+	<!-- Bootstrap  -->
+	<link rel="stylesheet" href="/static/css/bootstrap.css">
+	<!-- Owl Carousel -->
+	<link rel="stylesheet" href="/static/css/owl.carousel.min.css">
+	
+	<link rel="stylesheet" href="/static/css/owl.theme.default.min.css">
+
+	<link rel="stylesheet" href="/static/css/style.css">
+
+    <body class="login-body">
+    
+        <header>
+            <div class="container text-center">
+                <div class="fh5co-navbar-brand">
+                    <a class="fh5co-logo" >S A V I O U R</a>
+                </div>
+                <nav id="fh5co-main-nav" role="navigation">
+                    <ul>
+                        <li><a  >Predict Crime</a></li>
+                        <li><a >Crime Analysis</a></li>
+                        <li><a >About</a></li>
+                        <li><a >Contact</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+
+
+    <form class="box" action="login
+    " method="POST">
+
+<h1 style="margin-top: 250px;">login</h1>
+
+<input type="text" placeholder="Enter Username" id="username">
+<input type="password" placeholder="Enter Password" id="password">
+<input type="submit" value="Login" action="hello.html" onclick="validate()">
+
+</form>
+
+
+<script>
+
+function validate() {
+    var username = document.getElementById("username").value;
+    var password = document.getElementById("password").value;
+
+    if(username=="admin" && password=="admin")
+    {
+       
+        window.open('index.html')
+    }
+    else{
+        alert("failed");
+    }
+}
+</script>
+
+
+</body>
+</html>
